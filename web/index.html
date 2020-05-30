@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<!--head start-->
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ideaHub</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/tops.css" rel="stylesheet" type="text/css">
+    <link href="./css/sortable.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <base target="_self">
+</head>
+<!--head end-->
+<!--body start-->
+<body  style="overflow:scroll;overflow-x:hidden;" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false"
+       onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+<div id="New" class="new" style="display: none;"></div>
+<div id="closeNew" class="closeBtn" onmouseup="closeDiv('New','closeNew')" style="display: none;"></div>
+<div class="userBtn" onclick="_2URL('')">
+    <div class="wave" style="animation-delay: 0.2s;-webkit-animation-delay: 0.2s;-moz-animation-delay: 0.2s;-ms-animation-delay:0.2s;"></div>
+    <div class="wave" style="animation-delay: 1.1s;-webkit-animation-delay: 1.1s;-moz-animation-delay: 1.1s;-ms-animation-delay:1.1s;"></div>
+    <div class="wave" style="animation-delay: 2.0s;-webkit-animation-delay: 2.0s;-moz-animation-delay: 2.0s;-ms-animation-delay:2.0s;"></div>
+</div>
+<div id="heads" class="head">
+    <dt style="color: lightcyan;">首页</dt>
+    <dt style="cursor: pointer;">发现</dt>
+    <button type="submit" id="search_btn"></button>
+    <input type="text" id="search_text" placeholder="搜索">
+</div>
+<div class="opacityFocus">
+    <div id="contents" class="content">
+        <div class="switcher" >
+            <!--分类栏-->
+            <ul class="sortable__nav">
+                <li>
+                    <a data-sjslink="all" class="nav__link">推荐</a>
+                </li>
+                <li>
+                    <a data-sjslink="mark" class="nav__link">收藏</a>
+                </li>
+                <li>
+                    <a data-sjslink="funny" class="nav__link">创意</a>
+                </li>
+            </ul>
+            <!--卡片栏-->
+            <div id="sortable" class="sjs-default">
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/1.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 1</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, eius, asperiores. Incidunt sapiente est quae iure...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/2.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 2</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae necessitatibus, dolorem similique vero explicabo...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="funny">
+                    <div class="card">
+                        <img class="card__picture" src="./res/3.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 3</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, placeat voluptate, fuga tenetur eos ducimus animi porro...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/4.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 4</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit doloremque quisquam, obcaecati unde nam est quos...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/5.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 5</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis hic minima nisi reprehenderit...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="funny">
+                    <div class="card">
+                        <img class="card__picture" src="./res/6.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 6</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatibus, id, deserunt inventore...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/7.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 7</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni sunt dolores nam...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="mark">
+                    <div class="card">
+                        <img class="card__picture" src="./res/8.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 8</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam, blanditiis necessitatibus...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-sjsel="funny">
+                    <div class="card">
+                        <img class="card__picture" src="./res/0.jpg" alt="">
+                        <div class="card-infos">
+                            <h2 class="card__title">圈子 9</h2>
+                            <p class="card__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci voluptatum laborum officiis...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="switcher" style="display: none;">
+            <dt>热点0</dt>
+            <dt>热点1</dt>
+            <dt>热点2</dt>
+        </div>
+    </div>
+</div>
+<div class="newBtn" onmouseup="showDiv('New','closeNew')"></div>
+<div class="footer">
+    <h2 title="@李虎@彭永超@陈卓群@王文龙@石泽坤@陈添@司若愚">&copy;2020&nbsp;&nbsp;Team ideaHub &WHU</h2>
+    <!--@李虎@彭永超@陈卓群@王文龙@石泽坤@陈添@司若愚-->
+</div>
+</body>
+<!--body end-->
+<!--js part-->
+<script src="./js/base.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/sortable.min.js"></script>
+<script type="text/javascript">
+    document.querySelector('#sortable').sortablejs()
+</script>
+</html>

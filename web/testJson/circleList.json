@@ -1,0 +1,39 @@
+{
+  "code":1,
+  "msg":"获取圈子列表成功",
+  "count":3,
+  "data":[{
+    "name":"圈子1",
+    "hubLeader":"创始人1",
+    "setupTime":"2020年5月24日 8:00",
+    "thumbUpNum":136,
+    "articleNum":132,
+    "ImagePath":"../images/circle1.jpg"
+  },
+    {
+    "name":"圈子2",
+    "hubLeader":"创始人2",
+    "setupTime":"2020年5月24日 8:00",
+    "thumbUpNum":136,
+    "articleNum":132,
+    "ImagePath":"../images/circle2.jpg"
+    },
+    {
+    "name":"圈子3",
+    "hubLeader":"创始人3",
+    "setupTime":"2020年5月24日 8:00",
+    "thumbUpNum":136,
+    "articleNum":132,
+    "ImagePath":"../images/circle3.jpg"
+    },
+    {
+    "name":"圈子4",
+    "hubLeader":"创始人4",
+    "setupTime":"2020年5月24日 8:00",
+    "thumbUpNum":136,
+    "articleNum":132,
+    "ImagePath":"../images/circle1.jpg"
+    }
+
+  ]
+}

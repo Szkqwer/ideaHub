@@ -1,0 +1,16 @@
+{
+  "code":1,
+  "msg":"获取个人信息成功",
+  "count":1,
+  "data":{
+    "nickName":"珞珈山小霸王",
+    "avatarPath":"../images/image1.jpg",
+    "thumbUpNum":136,
+    "fansNum":231,
+    "ViewNum":3021,
+    "level":3,
+    "likes":["0001","0002","0003"],
+    "marksArtic":["0001","0002","0003"],
+    "marksHub":["0001","0002","0003"]
+}
+}

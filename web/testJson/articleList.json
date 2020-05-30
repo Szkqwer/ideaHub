@@ -1,0 +1,181 @@
+{
+  "code":1,
+  "msg":"获取文章列表成功",
+  "count":14,
+  "data":[{
+    "title":"标题1",
+    "author":"作者1",
+    "nickName":"作者昵称1",
+    "avatarPath":"/../..",
+    "digest":"摘要摘要摘要摘要摘要摘要...",
+    "tag":"entertainment",
+    "updateTime":"2020年5月24日 8:00",
+    "thumbUpNum":136,
+    "parentTitle":"校园时代",
+    "parentTitleImagePath":"../images/image2.jpg"
+
+  },
+    {
+      "title":"标题2",
+      "author":"作者2",
+      "nickName":"作者昵称2",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"../images/image3.jpg"
+    },
+    {
+      "title":"标题3",
+      "author":"作者3",
+      "nickName":"作者昵称3",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"../images/image4.jpg"
+
+    },
+    {
+      "title":"标题4",
+      "author":"作者4",
+      "nickName":"作者昵称4",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"../images/image5.jpg"
+    },
+    {
+      "title":"标题5",
+      "author":"作者",
+      "nickName":"作者昵称",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"../images/image6.jpg"
+
+    },
+    {
+      "title":"标题6",
+      "author":"作者6",
+      "nickName":"作者昵称6",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"../images/image7.jpg"
+    },
+    {
+      "title":"标题7",
+      "author":"作者7",
+      "nickName":"作者昵称7",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"../images/image8.jpg"
+
+    },
+    {
+      "title":"标题8",
+      "author":"作者8",
+      "nickName":"作者昵称8",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"../images/image9.jpg"
+    },
+    {
+      "title":"标题9",
+      "author":"作者9",
+      "nickName":"作者昵称9",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"../images/image10.jpg"
+
+    },
+    {
+      "title":"标题10",
+      "author":"作者10",
+      "nickName":"作者昵称10",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"/../.."
+    },
+    {
+      "title":"标题11",
+      "author":"作者11",
+      "nickName":"作者昵称11",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"/../.."
+
+    },
+    {
+      "title":"标题12",
+      "author":"作者12",
+      "nickName":"作者昵称12",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"/../.."
+    },
+    {
+      "title":"标题13",
+      "author":"作者13",
+      "nickName":"作者昵称13",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"entertainment",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"校园时代",
+      "parentTitleImagePath":"/../.."
+
+    },
+    {
+      "title":"标题14",
+      "author":"作者14",
+      "nickName":"作者昵称14",
+      "avatarPath":"/../..",
+      "digest":"摘要摘要摘要摘要摘要摘要...",
+      "tag":"military",
+      "updateTime":"2020年5月24日 8:00",
+      "thumbUpNum":136,
+      "parentTitle":"音乐具象化",
+      "parentTitleImagePath":"/../.."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+
+/*悬浮按钮*/
+.userBtn, .backBtn, .newBtn{
+	z-index: 2;
+	position: fixed;
+	right: 5%;
+	background: lightblue;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: solid 1px darkslateblue;
+
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+}
+.userBtn:hover,.backBtn:hover,.newBtn:hover,.closeBtn:hover{
+	border: none;
+	background: darkturquoise;
+}
+/*
+.userBtn:active,.backBtn:active,.newBtn:active{
+}*/
+/*用户悬浮按钮*/
+.userBtn{
+	top: 5%;
+	width: 10vmin;
+	height: 10vmin;
+	background-image: url("../res/user.svg");
+}
+.userBtn:hover{
+	width: 12vmin;
+	height: 12vmin;
+	background-image: url("../res/user_hover.svg");
+}
+.userBtn:active{
+	background-image: url("../res/user_active.svg");
+}
+/*返回*/
+.backBtn{
+	top: 5%;
+	width: 10vmin;
+	height: 10vmin;
+	background-image: url("../res/back.svg");
+}
+.backBtn:hover{
+	width: 12vmin;
+	height: 12vmin;
+	background-image: url("../res/back_hover.svg");
+}
+.backBtn:active{
+	background-image: url("../res/back_active.svg");
+}
+/*新建动态*/
+.newBtn{
+	bottom: 6%;
+	width: 6vmin;
+	height: 6vmin;
+	background-image: url("../res/new.svg");
+}
+.newBtn:hover{
+	background-image: url("../res/new_hover.svg");
+	transform: rotate(180deg);
+}
+.newBtn:active{
+	background-image: url("../res/new_active.svg");
+}
+/*伪波纹*/
+.userBtn:hover .wave{
+	display: block;
+	position:absolute;
+	z-index: 1;
+	opacity: 0;
+	margin-left: -.15vmin;
+	margin-top:-.15vmin;
+	width: 12vmin;
+	height:12vmin;
+	border-radius:50%;
+	border: .1vmin solid darkslateblue;
+	box-shadow:0 0 2vmin .4vmin darkslateblue;
+
+	animation: oneWave 2.7s ease-out infinite;
+	-webkit-animation: oneWave 2.7 ease-out infinite;
+	-moz-animation: oneWave 2.7s ease-out infinite;
+	-ms-animation: oneWave 2.7s ease-out infinite;
+}
+@keyframes oneWave {
+	0% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.8);
+		-webkit-transform: scale(1.8);
+		-moz-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		opacity: 0;
+	}
+}
+.closeBtn,.new{
+    z-index: 3;
+    position: fixed;
+
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+}
+.new{
+    top: 4%;
+    right: 4%;
+    height: 92vh;
+    width: 92vw;
+    background: honeydew;
+    border: solid 1px darkslateblue;
+    border-radius: 2vmin;
+}
+/*
+.new:hover{
+    
+}*/
+.closeBtn{
+    top: 6%;
+    right: 6%;
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 50%;
+    background: none;
+    background-image: url("../res/close.svg");
+    cursor: pointer;
+}
+.closeBtn:hover{
+    background-image: url("../res/close_hover.svg");
+    transform: rotate(180deg); 
+}
+.closeBtn:active{
+    background-image: url("../res/close_active.svg");
+}
