@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i
-                    class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Friday, 29 March 2020</a>
+                    class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;2020年6月2日</a>
                 <div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">ideaHub</a>
                     <div class="fh5co_treding_position_absolute"></div>
                 </div>
@@ -245,7 +245,7 @@
 <!-- Main -->
 <script src="../jsUser/main.js"></script>
 <script type="text/javascript">
-    var userId;
+    var userId = 1;//暂时设置为1
     $(function () {
         GetPersonalInfo(userId);
     })
@@ -253,14 +253,15 @@
         $.ajax({
             type:"GET",
             // url:"../testJson/personalInfo.json?" + "userId=" + userId,
-            url:'GetPersonInfoServlet?'+"userId=" + userId,//userId实际上无法获得，需要后端从服务器中直接获得session
+            //url:'GetPersonInfoServlet?'+"userId=" + userId,//userId实际上无法获得，需要后端从服务器中直接获得session
+            url:'/homePage/getPersonalInfo?userId='+ userId,
             contentType:"application/json",
             success:function (res) {
                 if(res.code == 1){
                     let data = res.data
                     $('#nick_name').html(data.nickName)
                     $('#thumbUp_num').html(data.thumbUpNum)
-                    $('#view_num').html(data.ViewNum)
+                    $('#view_num').html(data.viewNum)
                     $('#fans_Num').html(data.fansNum)
                     let avator_str = '<a href="#" class="fh5co_con_123"><img src="'+ data.avatarPath + '" alt="img" class="footer_logo"/><i class="fa fa-home"></i></a>'
                     $('#avatar').html(avator_str)
