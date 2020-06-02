@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>编辑页</title>
+    <title>editPage</title>
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <base target="_self">
 </head>
 <body  style="overflow:scroll;overflow-x:hidden;" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false"
        onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
-       <h2 style="width: 100%;text-align: center;">编辑页</h2>
+<h2 style="width: 100%;text-align: center;">编辑页</h2>
 </body>
 <!--body end-->
 <!--js part-->
@@ -19,18 +19,18 @@
         <p>请在这里编辑</p>
 </script>
 <script type="text/javascript">
-  UE.getEditor('myEditor',{
-    //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
-    // toolbars:[['FullScreen', 'Source', 'Undo', 'Redo','Bold','test']],
-    //focus时自动清空初始化时的内容
-    autoClearinitialContent:true,
-    //关闭字数统计
-    wordCount:false,
-    //关闭elementPath
-    elementPathEnabled:false,
-    //默认的编辑区域高度
-    initialFrameHeight:500
-    //更多其他参数，请参考ueditor.config.js中的配置项
-  })
+    UE.getEditor('myEditor',{
+        //这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+        // toolbars:[['FullScreen', 'Source', 'Undo', 'Redo','Bold','test']],
+        //focus时自动清空初始化时的内容
+        autoClearinitialContent:true,
+        //关闭字数统计
+        wordCount:false,
+        //关闭elementPath
+        elementPathEnabled:false,
+        //默认的编辑区域高度
+        initialFrameHeight:500
+        //更多其他参数，请参考ueditor.config.js中的配置项
+    })
 </script>
 </html>
