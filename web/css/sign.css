@@ -1,0 +1,71 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(61, 142, 168);
+    font-family: "montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.sign-box{
+    padding: 4vmin;
+    width: 45vw;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.sign-box h1{
+    margin: 2vmin 0 8vmin 0;
+    color: white;
+    font-size: 6vmin;
+    cursor: default;
+}
+.sign-box input{
+    display: block;
+    width: 100%;
+    height: 8vmin;
+    border-radius: 8vmin;
+    font-size: 4vmin;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+input::-ms-reveal{display: none;}
+input::-ms-clear{display: none;}
+.sign-text{
+    margin: 2% 0 2% 0;
+    text-indent: 4vmin;
+    background: rgba(255,255,255,5);
+}
+.sign-btn{
+    margin:8% 0 2% 0;
+    background: lightblue;
+    color: darkcyan;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.sign-btn:hover{
+    font-weight: bold;
+    font-size: 4.8vmin;
+}
+.sign-box a{
+    float: right;
+    width: 20%;
+    display: block;
+    margin: 2vmin 0 2vmin 0;
+    text-align: center;
+    color: white;
+    font-size: 2vmin;
+    outline: none;
+    transition: 0.4s;
+}
+.sign-box a:hover{
+    color: rgba(0,0,0,.6);
+}

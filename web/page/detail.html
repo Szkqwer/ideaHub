@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/detail.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css.css" rel="stylesheet" type="text/css">
+    <title>ArticleDetail</title>
+
+</head>
+<body>
+<div class="ctbox">
+    <div class="pic"></div>
+    <h2 class="title">标题</h2>
+    <p class="content">一大段内容放荡哦额那块岚皋发到哪送客服呢我发到哪飞啊</p>
+</div>
+<div id="box" class="cmbox">
+    <div class="box-top">
+        <label>发表评论:</label>
+        <textarea id="my_textarea"></textarea>
+        <button id="comment">发表</button>
+    </div>
+    <ul id="reply">
+    </ul>
+</div>
+<script>
+    window.onload = function () {
+        //封装id获取操作
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+
+        //发表按钮点击
+        $("comment").onclick = function () {
+            //获取输入的内容
+            var content = $("my_textarea").value;
+            //判断为空
+            if (content.length === 0) {
+                alert("请输入评论的内容!");
+                return;
+            } else {
+                var li = document.createElement("li");
+                li.innerHTML = content + '<a href = "Javascript:;">删除</a>';//动态处理a标签
+                $("reply").appendChild(li);//在ul中添加li
+                //清除输入框
+                $("my_textarea").value = "";
+            }
+
+            //删除操作
+            //获取li中所有链接a元素
+            var liList = $("reply").getElementsByTagName("a");
+            //遍历拿到每个"删除"标签
+            for (var i = 0; i < liList.length; i++) {
+                var a = liList[i];
+                a.onclick = function () {
+                    //删除父元素li
+                    this.parentNode.remove();
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

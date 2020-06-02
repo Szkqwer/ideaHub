@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SignIn</title>
+    <link href="../css/sign.css" rel="stylesheet" type="text/css">
+    <link href="../css/password.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body style="overflow:scroll;overflow-x:hidden;" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false"
+        onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+<div class="sign-box">
+    <h1>生活，可点可圈</h1>
+    <input id="userid" class="sign-text" type="email" placeholder="账号/邮箱">
+    <div class="container">
+        <div class="ripple"></div>
+        <div class="toggle" data-state="hidden">
+        </div>
+        <input class="sign-text" type="password" id="password" placeholder="密码" maxlength="20" autocomplete="off">
+    </div>
+    <a href="#">忘记密码？</a>
+    <a href="./signup.html">没有账户？</a>
+    <input id="btn" class="sign-btn" type="submit" value="登录">
+</div>
+<script type="text/javascript" src="../js/password.js"></script>
+<script type="text/javascript">
+    var signBtn=document.getElementById("btn");
+    function signin(e){
+        var uid=document.getElementById("userid").val;
+        var pwd=document.getElementById("password").val;
+        $.ajax({
+        type:"GET", //ajax中的type一定要用GET，起初我就是用的POST然后每次返回的sessionId不一样，这个坑爬了一会，因为知道jsonp请求其实最终会转成get请求访问
+        url:"../testJson/signin.json", //处理页面的路径
+        async:false,
+        cache:false,
+        data:{u:uid,p:pwd}, //传递的数据.提交数一般以json格式来写,key是自定义的,:后面的值 就是上面的值
+        datatype:"JSON", //返回值的类型,TEXT,JSON,XML三种类型可选
+        success:function(res){  //如果ajax执行成功,返回来调用success函数即回调函数,返回值以参数的形式返回
+            if(res.code==1){
+                window.location.href = "./userPage.html";
+                // alert(res.msg);
+            }
+        },
+        error:function(){
+            alert("signin failed");
+        }
+    });
+}
+signBtn.addEventListener('click',signin);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SignUp</title>
+    <link href="../css/sign.css" rel="stylesheet" type="text/css">
+    <link href="../css/password.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body style="overflow:scroll;overflow-x:hidden;" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false"
+        onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+<div class="sign-box">
+    <form action="./user.html" method="post">
+        <h1>加入点圈</h1>
+        <input id="nickname" class="sign-text" type="text" placeholder="昵称">
+        <input id="email" class="sign-text" type="email" placeholder="邮箱">
+        <div class="container">
+            <div class="ripple"></div>
+            <div class="toggle" data-state="hidden">
+            </div>
+            <input id="password" class="sign-text" type="password" placeholder="密码" maxlength="20" autocomplete="off">
+        </div>
+        <a href="./signin.html">已有账户？</a>
+        <input id="btn" class="sign-btn" type="submit" value="注册">
+    </form>
+</div>
+<script src="../js/password.js"></script>
+<script type="text/javascript">
+    var signBtn=document.getElementById("btn");
+    function signin(e){
+        var nkname=document.getElementById("nickname").val;
+        var em=document.getElementById("email").val;
+        var pwd=document.getElementById("password").val;
+        $.ajax({
+        type:"POST",  //数据的提交传递方式,GET,POST 最好用POST
+        url:"../testJson/signin.json", //处理页面的路径
+        cache:false,
+        data:{n:nkname,m:em,p:pwd}, //传递的数据.提交数一般以json格式来写,key是自定义的,:后面的值 就是上面的值
+        datatype:"JSON", //返回值的类型,TEXT,JSON,XML三种类型可选
+        contentType:"application/json",
+        success:function(res){  //如果ajax执行成功,返回来调用success函数即回调函数,返回值以参数的形式返回
+            alert(res.datatype);
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            alert("signin failed:"+errorThrown);
+        }
+    });
+}
+signBtn.addEventListener('click',signin);
+</script>
+</body>
+</html>
