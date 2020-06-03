@@ -1,58 +1,34 @@
-body{
-    background: lightsteelblue;
-    font-family: "YaHei Consolas Hybrid", Consolas, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
-}
-.ctbox,.cmbox{
-    position: relative;
-    width: 80vw;
-    padding: 2%;
-    border-radius: 2vmin;
-}
-.ctbox{
+.box{
     margin: 1vmin auto;
-    background: #00aaaa;
-}
-.ctbox .pic{
-    margin: 2% auto;
-    width: 90%;
-    background: gray;
-    background-size: cover;
-}
-.ctbox .title{
-    margin: 2% auto;
-}
-.ctbox .content{
-
-}
-.cmbox {
-    margin: auto;
-    border: 1px solid darkslateblue;
     background: lightblue;
 }
-
+.box button{
+    display: block;
+    float: right;
+    margin: 15px;
+}
 #my_textarea {
-    width: 80%;
-    height: 20vh;
+    content: none;
+    margin: 2vmin;
+    width: 85vw;
+    height: 15vh;
     outline: none;
-    font-size: 3vmin;
+    font-size: 18px;
+    border-radius: 6px;
 }
-
-.box-top {
-    margin-bottom: 30px;
-}
-
 #reply {
-    width: 80%;
     margin: auto;
 }
 
 #reply li {
     border-bottom: 1px dashed darkslateblue;
     color: darkslateblue;
-    font-size: 3vmin;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 #reply li a {
+    color: darkslateblue;
     float: right;
     text-decoration: none;
 }

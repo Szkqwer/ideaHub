@@ -5,22 +5,24 @@
     <link href="../css/detail.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css.css" rel="stylesheet" type="text/css">
     <title>ArticleDetail</title>
-
 </head>
-<body>
-<div class="ctbox">
-    <div class="pic"></div>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart ="return false"
+      onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+<div class="box">
+    <img class="pic" src="../res/0.jpg"></img>
     <h2 class="title">标题</h2>
-    <p class="content">一大段内容放荡哦额那块岚皋发到哪送客服呢我发到哪飞啊</p>
+    <p class="content">一大段内容一大段内容一大段内容
+        一大段内容一大段内容一大段内容一大段\一大段内容<br/>
+        一大段内容<br/>
+        一大段内容内容一大段内容一大<br/>段内容一大段内容</p>
 </div>
-<div id="box" class="cmbox">
-    <div class="box-top">
-        <label>发表评论:</label>
-        <textarea id="my_textarea"></textarea>
-        <button id="comment">发表</button>
-    </div>
-    <ul id="reply">
-    </ul>
+<div class="box">
+    <ul id="reply"></ul>
+</div>
+<div id="box" class="box">
+    <label>发表评论:</label>
+    <textarea id="my_textarea"></textarea>
+    <button id="comment">发表</button>
 </div>
 <script>
     window.onload = function () {
